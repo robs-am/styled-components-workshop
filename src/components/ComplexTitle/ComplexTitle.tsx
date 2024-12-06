@@ -1,12 +1,17 @@
-import React from 'react'
-import { ComplexTitleProps } from './ComplexTitle.types'
-import { Wrapper } from './ComplexTitle.styles'
+import React from 'react';
+import { ComplexTitleProps } from './ComplexTitle.types';
+import { Wrapper } from './ComplexTitle.styles';
 
-const ComplexTitle: React.FC<ComplexTitleProps> = ({ title }) => {
+const ComplexTitle: React.FC<ComplexTitleProps> = ({ title, children }) => {
   return (
-    <Wrapper><h1>{title}</h1><div className='underline'>
-    </div></Wrapper>
-  )
-}
+    <Wrapper className="bg-grey">
+      {children}
+      <h1>{title}</h1>
+      <div className="underline"></div>
+      <h1 className='title'>{title}</h1>
+    </Wrapper>
 
-export default ComplexTitle
+  );
+};
+
+export default ComplexTitle;

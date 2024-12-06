@@ -12,7 +12,7 @@ const App: React.FC = () => {
   return (
     <>
       <div>
-        <ComplexTitle title='Hello World' />
+        <ComplexTitle title='Hello World'></ComplexTitle>
 
         {/* <BasicTitle>Hello</BasicTitle>
         <DefaultButton primary>Primary Button</DefaultButton>
