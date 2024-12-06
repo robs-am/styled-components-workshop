@@ -1,13 +1,9 @@
 import React from 'react';
 import { StyledButton } from './DefaultButton.styles';
+import { DefaultButtonProps } from './DefaultButton.types';
 
-
-interface StyledButton {
-  children: React.ReactNode;
-  primary?: boolean;
-}
-const DefaultButton: React.FC<StyledButton> = ({ children, primary }) => {
-  return <DefaultButton primary={primary}>{children}</DefaultButton>;
+const DefaultButton: React.FC<DefaultButtonProps> = ({ children, primary }) => {
+  return <StyledButton primary={primary}>{children}</StyledButton>;
 };
 
 export default DefaultButton;
